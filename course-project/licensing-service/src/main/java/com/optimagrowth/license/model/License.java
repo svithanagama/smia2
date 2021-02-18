@@ -1,8 +1,9 @@
 package com.optimagrowth.license.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.springframework.hateoas.RepresentationModel;
 
-public class License
+public class License extends RepresentationModel<License>
 {
     private int id;
     private String licenseId;
