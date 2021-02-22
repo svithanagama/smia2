@@ -3,78 +3,65 @@ package com.optimagrowth.license.model;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.hateoas.RepresentationModel;
 
-public class License extends RepresentationModel<License>
-{
-    private int id;
-    private String licenseId;
-    private String description;
-    private String organizationId;
-    private String productName;
-    private String licenseType;
+public class License extends RepresentationModel<License> {
 
-    public int getId()
-    {
-        return id;
-    }
+  private int id;
+  private String licenseId;
+  private String description;
+  private String organizationId;
+  private String productName;
+  private String licenseType;
 
-    public void setId(int id)
-    {
-        this.id = id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public String getLicenseId()
-    {
-        return licenseId;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public void setLicenseId(String licenseId)
-    {
-        this.licenseId = licenseId;
-    }
+  public String getLicenseId() {
+    return licenseId;
+  }
 
-    public String getDescription()
-    {
-        return description;
-    }
+  public void setLicenseId(String licenseId) {
+    this.licenseId = licenseId;
+  }
 
-    public void setDescription(String description)
-    {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public String getOrganizationId()
-    {
-        return organizationId;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setOrganizationId(String organizationId)
-    {
-        this.organizationId = organizationId;
-    }
+  public String getOrganizationId() {
+    return organizationId;
+  }
 
-    public String getProductName()
-    {
-        return productName;
-    }
+  public void setOrganizationId(String organizationId) {
+    this.organizationId = organizationId;
+  }
 
-    public void setProductName(String productName)
-    {
-        this.productName = productName;
-    }
+  public String getProductName() {
+    return productName;
+  }
 
-    public String getLicenseType()
-    {
-        return licenseType;
-    }
+  public void setProductName(String productName) {
+    this.productName = productName;
+  }
 
-    public void setLicenseType(String licenseType)
-    {
-        this.licenseType = licenseType;
-    }
+  public String getLicenseType() {
+    return licenseType;
+  }
 
-    @Override
-    public String toString()
-    {
-        return ToStringBuilder.reflectionToString(this);
-    }
+  public void setLicenseType(String licenseType) {
+    this.licenseType = licenseType;
+  }
+
+  @Override
+  public String toString() {
+    return ToStringBuilder.reflectionToString(this);
+  }
 }
